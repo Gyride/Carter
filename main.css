@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    font-family: 'Lato';
+    font-weight: 300;
+}
+
+/* imports */
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+@font-face {
+    font-family: 'dotsfont';
+    src: url('dotsfont.eot');
+    src: url('dotsfont.eot?#iefix') format('embedded-opentype'),
+         url('dotsfont.woff') format('woff'),
+         url('dotsfont.ttf') format('truetype'),
+         url('dotsfont.svg#dotsfontregular') format('svg');
+  }
+
+/* Home Page */
+#password {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+}
+
+#password #setter {
+    position: absolute;
+    left: -1000%;
+    color: #000;
+    background-color: #000;
+}
+
+#password > span {
+    display: inline-block;
+    width: 100%;
+}
+
+#password #getter {
+    display: block;
+    margin: 0 auto;
+    width: 116px;
+    height: 16px;
+    overflow: hidden;
+}
+
+#password #getter #writer {
+    display: inline-block;
+    font-size: 12px;
+    color: #fff;
+    vertical-align: middle;
+    font-family: 'dotsfont';
+    font-size: 8px;
+}
+
+#password #getter #cursor {
+    display: none;
+    width: 1px;
+    height: 80%;
+    margin-left: -5px;
+    background-color: #fff;
+    vertical-align: middle;
+}
+
+#iglink {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+#iglink img {
+    width: 64px;
+    height: 64px;
+}
+
+/* We'll see */
